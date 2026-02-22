@@ -7,75 +7,80 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <a href="index.html" class="logo">KS <span>Kaushik</span></a>
-    <nav class="nav">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="bio.html" class="nav-link">Bio</a>
-      <a href="resume.html" class="nav-link active">Resume</a>
-      <a href="projects.html" class="nav-link">Projects</a>
-    </nav>
-  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-avatar" aria-hidden="true">KS</div>
+      <ul class="sidebar-nav">
+        <li><a href="index.html">About</a></li>
+        <li><a href="resume.html" class="active">Experience</a></li>
+        <li><a href="resume.html#education">Education</a></li>
+        <li><a href="resume.html#certifications">Certifications</a></li>
+        <li><a href="resume.html#skills">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </aside>
 
-  <main class="page">
-    <h1 class="page-title">Resume</h1>
+    <main class="main">
+      <h1 class="page-title">Experience</h1>
 
-    <div class="resume-block">
-      <h3>Experience</h3>
-      <div class="resume-item">
-        <div class="resume-item-head">
-          <strong>Programmer Analyst Trainee</strong>
-          <span class="resume-date">Present · 1.6+ years</span>
+      <div class="resume-block">
+        <h3>Experience</h3>
+        <div class="resume-item">
+          <div class="resume-item-head">
+            <strong>Programmer Analyst Trainee</strong>
+            <span class="resume-date">Present · 1.6+ years</span>
+          </div>
+          <div class="resume-item-org">Cognizant</div>
+          <ul>
+            <li>Architected and deployed scalable cloud applications using AWS (Step Functions, Lambda, S3, DynamoDB, SSM) and Golang.</li>
+            <li>Integrated Kafka for real-time event streaming; designed and implemented backend APIs.</li>
+            <li>Built automated DevOps pipelines with Jenkins and Docker; increased release frequency and reliability.</li>
+            <li>Drove Git workflows and CI/CD (branch strategies, code review, automated builds, deployment pipelines).</li>
+            <li>Collaborated with QA, BAs, and product owners; contributed to 99.95% system uptime.</li>
+            <li>Championed OpenAPI documentation and API testing (Postman and custom suites).</li>
+          </ul>
         </div>
-        <div class="resume-item-org">Cognizant</div>
-        <ul>
-          <li>Architected and deployed scalable cloud applications using AWS (Step Functions, Lambda, S3, DynamoDB, SSM) and Golang.</li>
-          <li>Integrated Kafka for real-time event streaming; designed and implemented backend APIs.</li>
-          <li>Built automated DevOps pipelines with Jenkins and Docker; increased release frequency and reliability.</li>
-          <li>Drove Git workflows and CI/CD (branch strategies, code review, automated builds, deployment pipelines).</li>
-          <li>Collaborated with QA, BAs, and product owners; contributed to 99.95% system uptime.</li>
-          <li>Championed OpenAPI documentation and API testing (Postman and custom suites).</li>
+      </div>
+
+      <div class="resume-block" id="education">
+        <h3>Education</h3>
+        <div class="resume-item">
+          <div class="resume-item-head">
+            <strong>Bachelor's Degree</strong>
+          </div>
+          <div class="resume-item-org">— Add your university and year</div>
+        </div>
+      </div>
+
+      <div class="resume-block" id="certifications">
+        <h3>Certifications</h3>
+        <ul class="cert-list">
+          <li><strong>AWS AI Practitioner</strong> — Amazon Web Services</li>
+          <li><strong>AWS Cloud Practitioner</strong> — Amazon Web Services</li>
+          <li><strong>AWS Developer Associate</strong> — Amazon Web Services</li>
         </ul>
       </div>
-    </div>
 
-    <div class="resume-block">
-      <h3>Certifications</h3>
-      <ul class="resume-list-simple">
-        <li>AWS AI Practitioner</li>
-        <li>AWS Cloud Practitioner</li>
-        <li>AWS Developer Associate</li>
-      </ul>
-    </div>
-
-    <div class="resume-block">
-      <h3>Skills</h3>
-      <div class="skills-tags">
-        <span>AWS</span>
-        <span>Golang</span>
-        <span>Lambda</span>
-        <span>Step Functions</span>
-        <span>S3</span>
-        <span>DynamoDB</span>
-        <span>Kafka</span>
-        <span>Jenkins</span>
-        <span>Docker</span>
-        <span>CI/CD</span>
-        <span>Git</span>
-        <span>OpenAPI</span>
-        <span>Postman</span>
-      </div>
-    </div>
-
-    <div class="resume-block">
-      <h3>Education</h3>
-      <div class="resume-item">
-        <div class="resume-item-head">
-          <strong>Bachelor's Degree</strong>
+      <div class="resume-block" id="skills">
+        <h3>Skills</h3>
+        <div class="skills-tags">
+          <span>AWS</span>
+          <span>Golang</span>
+          <span>Lambda</span>
+          <span>Step Functions</span>
+          <span>S3</span>
+          <span>DynamoDB</span>
+          <span>Kafka</span>
+          <span>Jenkins</span>
+          <span>Docker</span>
+          <span>CI/CD</span>
+          <span>Git</span>
+          <span>OpenAPI</span>
+          <span>Postman</span>
         </div>
-        <div class="resume-item-org">— Add your university and year</div>
       </div>
-    </div>
-  </main>
+    </main>
+  </div>
 </body>
 </html>
