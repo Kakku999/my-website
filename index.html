@@ -50,5 +50,20 @@
       </div>
     </main>
   </div>
+
+  <!-- Amazon Connect Chat Widget (bottom right) -->
+  <script type="text/javascript">
+    (function(w, d, x, id){
+      s=d.createElement('script');
+      s.src='https://bpbroadbrand.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js';
+      s.async=1;
+      s.id=id;
+      d.getElementsByTagName('head')[0].appendChild(s);
+      w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+    })(window, document, 'amazon_connect', '71497f1b-3147-4d5a-bf5e-35f849d7e920');
+    amazon_connect('styles', { iconType: 'CHAT', openChat: { color: '#ffffff', backgroundColor: '#9c1616' }, closeChat: { color: '#ffffff', backgroundColor: '#265412'} });
+    amazon_connect('snippetId', 'QVFJREFIaGd3azZ2UUJrWFFOZGpBWHBPNndFSlRqYk4yLzRtc1ZFclBVSmZpU0hvNHdGNitEYTN5Ung3NHpDZHlYQW9WVFpxQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNYWNsWmRLVDBGUXJxcW0wOUFnRVFnQ3ZQVVhwZ0Jxc2g0N01ZVEJzQ0NWdHlwcmh2cWxuR2NZYTlObThXWVAvMTlXVHZYM29HU2Z3clRXcWI6OlNOWEI2OE9pc3d3dXE5YVRKaHlvQjQyZUhiWTJnZ2RvSFN3bXp0ME5HVllyRksvWkZabG1lUmxVV0FHcFlLWHVseEtWZEFzcmhZNis1ZVlpVVlOR0JRZ1EvS2ltSkxwRnhHbDk1SjRDdGJac05JV1pERjhYR2w1UVQyY2htc2lza2NLN1ViaVR4UjUvdVRMaWZCRTRYL1ROOWVkZkozdz0=');
+    amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
+  </script>
 </body>
 </html>
