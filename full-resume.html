@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaushik Shankar – Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .full-resume .main { max-width: 800px; }
+    .full-resume-print { display: none; margin-bottom: 1rem; }
+    @media print {
+      .sidebar, .full-resume-print, .no-print { display: none !important; }
+      .main { padding: 0; }
+      body { font-size: 11px; }
+    }
+  </style>
+</head>
+<body class="full-resume">
+  <div class="layout">
+    <aside class="sidebar no-print">
+      <div class="sidebar-avatar" aria-hidden="true">KS</div>
+      <ul class="sidebar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bio.html">About</a></li>
+        <li><a href="resume-summary.html">Resume</a></li>
+        <li><a href="resume.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <p class="full-resume-print">
+        <button type="button" onclick="window.print();" class="resume-print-btn">Save as PDF</button>
+        Use your browser’s Print (Ctrl+P) and choose “Save as PDF” to download.
+      </p>
+
+      <h1 class="full-resume-title">Kaushik Shankar</h1>
+      <p class="full-resume-contact">
+        <a href="tel:+16029210211">6029210211</a> | <a href="mailto:kaushikshankar61@gmail.com">kaushikshankar61@gmail.com</a> | <a href="https://linkedin.com/in/kaushikshankar1999" target="_blank" rel="noopener">LinkedIn</a> | <a href="https://github.com/kaushik-shankar-64" target="_blank" rel="noopener">GitHub</a> | <a href="index.html">Portfolio</a>
+      </p>
+
+      <div class="resume-block">
+        <h3>Professional Summary</h3>
+        <p class="bio-intro">
+          Software Engineer with 4 years of experience specializing in Backend and Cloud systems. Expert in Golang, Java, and AWS, with a proven track record of maintaining 99.95% uptime and building event-driven architectures with Kafka.
+        </p>
+      </div>
+
+      <div class="resume-block">
+        <h3>Experience</h3>
+
+        <div class="resume-item">
+          <div class="resume-item-head">
+            <strong>Software Engineer</strong>
+            <span class="resume-date">August 2024 – Present</span>
+          </div>
+          <div class="resume-item-org">The Cigna Group</div>
+          <ul>
+            <li>Engineered and deployed scalable cloud applications using AWS services including Step Functions, Lambda, S3, DynamoDB, and SSM, and Golang, handling high-volume transaction data and integrating Kafka for real-time event streaming across services.</li>
+            <li>Developed robust backend APIs and automated DevOps pipelines using Jenkins and Docker, increasing release frequency while maintaining security and compliance standards.</li>
+            <li>Leveraged Spring Boot and Kafka for orchestration and asynchronous processing, boosting scalability and system fault tolerance in production environments.</li>
+            <li>Led cross-functional collaborations—worked with QA, business analysts, and product owners to refine requirements, troubleshoot incidents, and achieve a 99.95% system uptime.</li>
+            <li>Standardized OpenAPI documentation and implemented API testing (Postman, custom test suites), raising code quality and facilitating onboarding for new developers.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <div class="resume-item-head">
+            <strong>Research Associate</strong>
+            <span class="resume-date">October 2022 – May 2024</span>
+          </div>
+          <div class="resume-item-org">Arizona State University</div>
+          <ul>
+            <li>Developed robust middleware using Golang and Java, utilizing Kafka for messaging to enhance real-time data flow and system scalability.</li>
+            <li>Implemented RESTful APIs to integrate backend logic with ReactJS frontends, ensuring seamless data flow across web and mobile platforms.</li>
+            <li>Managed cloud-native application deployments using Terraform on AWS, optimizing infrastructure costs and performance by 20%.</li>
+            <li>Streamlined software maintenance via Jenkins CI/CD, reducing system downtime by 25% through automated testing and deployment strategies.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <div class="resume-item-head">
+            <strong>Software Engineer</strong>
+            <span class="resume-date">October 2021 – August 2022</span>
+          </div>
+          <div class="resume-item-org">Cognizant</div>
+          <ul>
+            <li>Optimized backend services in Java and Golang, leveraging Kafka for increased throughput and availability.</li>
+            <li>Automated deployments and monitoring using AWS, Splunk, and DevOps tooling.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume-block">
+        <h3>Projects</h3>
+
+        <div class="resume-item">
+          <div class="resume-item-head"><strong>Distributed Image Classification</strong></div>
+          <ul>
+            <li>Developed scalable backend pipelines using Golang, AWS Lambda, and Kafka to process and classify thousands of images in real time, ensuring fast and accurate predictions.</li>
+            <li>Integrated monitoring, error handling, and automated deployments, improving system reliability and maintainability for large-scale AI workloads.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <div class="resume-item-head"><strong>Real-Time Data Processing</strong></div>
+          <ul>
+            <li>Built a robust streaming platform with Kafka, Docker, and AWS for ingesting and transforming live event data from multiple sources, supporting high-throughput workflows.</li>
+            <li>Implemented automatic scaling and alerting using Terraform and Splunk, reducing downtime and enabling proactive incident response.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume-block">
+        <h3>Core Technical Skills & Certification</h3>
+        <p class="bio-intro" style="margin-bottom: 0.5rem;"><strong>Languages:</strong> Golang, Java (Spring Boot), Python, JavaScript (ES6+), SQL, HTML5, CSS3.</p>
+        <p class="bio-intro" style="margin-bottom: 0.5rem;"><strong>Cloud/DevOps:</strong> AWS (Lambda, Step Functions, S3, DynamoDB, API Gateway, SageMaker), Docker, Terraform, Jenkins, CI/CD, Git, Splunk.</p>
+        <p class="bio-intro" style="margin-bottom: 0.5rem;"><strong>Backend & Middleware:</strong> Apache Kafka, RESTful APIs, Microservices, Event-Driven Architecture, OpenAPI/Swagger.</p>
+        <p class="bio-intro" style="margin-bottom: 0.5rem;"><strong>Frontend:</strong> ReactJS, User Interface (UI) Design, Responsive Web Design.</p>
+        <p class="bio-intro" style="margin-bottom: 0.5rem;"><strong>Databases & Analytics:</strong> MySQL, PostgreSQL, MongoDB, TensorFlow, Pandas, NumPy.</p>
+        <p class="bio-intro" style="margin: 0;"><strong>Certifications:</strong> AWS Certified Cloud Practitioner, AWS Certified Developer – Associate, AWS Certified AI Practitioner.</p>
+      </div>
+
+      <div class="resume-block">
+        <h3>Education</h3>
+        <p class="bio-intro" style="margin: 0;">Arizona State University – MS in Robotics and Autonomous Systems, May 2024.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -363,6 +363,35 @@ body {
   border-top: 1px solid #e9ecef;
 }
 
+/* Full resume page */
+.full-resume-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #343a40;
+  margin: 0 0 0.35rem;
+}
+
+.full-resume-contact {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin: 0 0 1.5rem;
+}
+
+.resume-print-btn {
+  padding: 0.5rem 1rem;
+  background: #c35639;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0.75rem;
+}
+
+.resume-print-btn:hover {
+  background: #a84830;
+}
+
 .cert-list {
   list-style: none;
   padding: 0;
